@@ -14,11 +14,7 @@ struct LogPlugin;
 
 impl<T: Message> Visitor<T> for LogPlugin {
 	fn visit_text(&self, text: &T::Text) {
-		println!("<{}> {}", text.sender(), text.content());
-	}
-
-	fn visit_other(&self, _text: &T::Other) {
-		// Ignore.
+		println!("<{}> {}", text.sender().nick(), text.content());
 	}
 }
 
