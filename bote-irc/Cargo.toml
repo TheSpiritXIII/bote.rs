@@ -1,0 +1,9 @@
+[package]
+name = "bote-irc"
+version = "0.1.0"
+authors = ["Daniel Hrabovcak <thespiritxiii@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bote = { path = "../bote" }
+irc = "0.14.1"

@@ -1,0 +1,9 @@
+[package]
+name = "bote-discord"
+version = "0.1.0"
+authors = ["Daniel Hrabovcak <thespiritxiii@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bote = { path = "../bote" }
+serenity = "0.9.2"
